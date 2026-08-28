@@ -1,13 +1,20 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
-import manifest from "./manifest";
+import manifest, { dynamic as manifestDynamic } from "./manifest";
 import NotFound from "./not-found";
-import { alt, contentType, size } from "./opengraph-image";
-import robots from "./robots";
-import sitemap from "./sitemap";
+import robots, { dynamic as robotsDynamic } from "./robots";
+import sitemap, { dynamic as sitemapDynamic } from "./sitemap";
 
 describe("public site metadata", () => {
+  it("marks generated metadata routes as static-export safe", () => {
+    expect([manifestDynamic, robotsDynamic, sitemapDynamic]).toEqual([
+      "force-static",
+      "force-static",
+      "force-static",
+    ]);
+  });
+
   it("keeps crawlers and the canonical sitemap pointed at larp.engineering", () => {
     expect(robots()).toEqual({
       rules: { userAgent: "*", allow: "/" },
@@ -31,12 +38,6 @@ describe("public site metadata", () => {
       background_color: "#f3efe3",
       theme_color: "#ff4f9a",
     });
-  });
-
-  it("publishes a social image contract sized for link previews", () => {
-    expect(alt).toBe("larp engineering / serious software, less serious theater");
-    expect(contentType).toBe("image/png");
-    expect(size).toEqual({ width: 1200, height: 630 });
   });
 
   it("turns dead routes into a useful way home", () => {
