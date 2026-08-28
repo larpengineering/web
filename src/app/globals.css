@@ -642,6 +642,44 @@ main {
   text-transform: uppercase;
 }
 
+.not-found {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100svh;
+  padding: 2rem;
+  background: var(--pink);
+}
+
+.not-found-code {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.not-found > div {
+  align-self: center;
+}
+
+.not-found h1 {
+  margin: 0;
+  font-size: clamp(6rem, 20vw, 18rem);
+  font-weight: 670;
+  letter-spacing: -0.09em;
+  line-height: 0.72;
+}
+
+.not-found p {
+  max-width: 32rem;
+  margin: 3rem 0 0 auto;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.not-found > a {
+  justify-self: start;
+}
+
 @keyframes ticker {
   to {
     transform: translateX(-50%);
