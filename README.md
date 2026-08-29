@@ -2,7 +2,7 @@
 
 > serious software. less serious theater.
 
-The public surface for **larp engineering**, built as an editorial field note instead of a generic studio template.
+The public surface for **larp engineering**, built as a restrained, text-led studio page instead of a generic agency template.
 
 ## stack
 
@@ -15,7 +15,7 @@ The public surface for **larp engineering**, built as an editorial field note in
 
 ## design posture
 
-The site uses warm paper, hard black, toxic pink, and one acid annotation color. Hierarchy comes from type and editorial rhythm, not rounded cards or decorative dashboards. The public copy deliberately avoids fake case studies, fake metrics, and placeholder social proof.
+The site is a restrained, text-led conversion surface: warm white, near-black, quiet gray, strong type, and no decorative props. The page keeps one primary action, states the offer in plain language, and uses the public source as proof instead of inventing case studies, metrics, or a logo wall.
 
 The source of truth lives in:
 

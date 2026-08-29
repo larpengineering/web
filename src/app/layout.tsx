@@ -3,11 +3,11 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 const description =
-  "Software, systems, and interfaces that survive contact with reality. Built in public by larp engineering.";
+  "Larp engineering designs and builds web products, internal tools, and the systems behind them.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://larp.engineering"),
-  title: "larp engineering / unfortunately real",
+  title: "larp engineering / software that works",
   description,
   applicationName: "larp engineering",
   alternates: {
@@ -17,19 +17,19 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "larp engineering",
-    title: "larp engineering / unfortunately real",
+    title: "larp engineering / software that works",
     description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "larp engineering / unfortunately real",
+    title: "larp engineering / software that works",
     description,
   },
 };
 
 export const viewport: Viewport = {
   colorScheme: "light",
-  themeColor: "#f3efe3",
+  themeColor: "#181816",
 };
 
 export default function RootLayout({

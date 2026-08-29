@@ -7,11 +7,11 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "larp engineering",
     short_name: "larp.engineering",
     description:
-      "Software, systems, and interfaces that survive contact with reality.",
+      "Web products, internal tools, and the systems behind them.",
     start_url: "/",
     display: "standalone",
-    background_color: "#f3efe3",
-    theme_color: "#ff4f9a",
+    background_color: "#fbfaf6",
+    theme_color: "#181816",
     icons: [
       {
         src: "/icon.svg",

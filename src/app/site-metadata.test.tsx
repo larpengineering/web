@@ -35,8 +35,8 @@ describe("public site metadata", () => {
       short_name: "larp.engineering",
       start_url: "/",
       display: "standalone",
-      background_color: "#f3efe3",
-      theme_color: "#ff4f9a",
+      background_color: "#fbfaf6",
+      theme_color: "#181816",
     });
   });
 
